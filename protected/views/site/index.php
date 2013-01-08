@@ -2,7 +2,7 @@
 $this->pageTitle = Yii::app()->name;
 ?>
 <div class="block">
-    <h3 class="title-line"><span class="bg-white">Топ обсуждаемых статеек</span></h3>
+    <h3 class="title-line"><span class="bg-white">Топ обсуждаемых</span></h3>
     <div class="mini-post-block">
         <div class="post-cat-box"><a href="#" class="small">Письмо</a>&nbsp;<a href="#" class="small">Политика</a></div>
         <img src="../images/article-1.jpg" />
