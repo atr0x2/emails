@@ -488,7 +488,7 @@ select
 #logo
 {
     display: block;
-    width: 200px;
+    width: 130px;
     height: 105px;
     margin: 27px 0px 0px 30px;
     background: url('../images/logo.png') no-repeat left bottom transparent;
