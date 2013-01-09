@@ -56,12 +56,13 @@ body
     background: url('../images/main-bg.jpg') repeat;
     line-height: 17px;
     letter-spacing: 0.1px;
+    min-width: 1060px;
 }
 form
 {
     margin: 0px !important;
 }
-a
+a:link, a:visited
 {
     color:#222222;
 }
@@ -195,11 +196,13 @@ span.icon-large
 {
     background: url('../images/main-bg-top.png') repeat-x center top transparent;
     min-height: 1400px;
+    min-width: 1060px;
 }
 .wraper-center
 {
     background: url("../images/main-bg-center.png") no-repeat scroll center 205px transparent;
     min-height: 1400px;
+    min-width: 1060px;
 }
 .main .wraper-center
 {
@@ -210,6 +213,7 @@ span.icon-large
 {
     background: url('../images/main-bg-bottom.png') repeat-x center bottom transparent;
     min-height: 1400px;
+    min-width: 1060px;
 }
 .wraper
 {
