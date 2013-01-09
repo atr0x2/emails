@@ -705,6 +705,7 @@ ul#tabs-list .active a
 #fnm1
 {
     width: 135px;
+    margin-left: 30px;
 }
 #fnm2
 {
@@ -716,7 +717,7 @@ ul#tabs-list .active a
 }
 #fnm4
 {
-    width: 200px;
+    width: 180px;    
 }
 #fnm5
 {
@@ -724,7 +725,7 @@ ul#tabs-list .active a
 }
 #fnm6
 {
-    width: 170px;
+    width: 160px;
 }
 #fnm7
 {
