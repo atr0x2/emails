@@ -10,7 +10,7 @@ $this->pageTitle = Yii::app()->name;
             <a href="#" class="post-small-title">
                 <span class="line"></span>
                 YTube находился в список сайтов по ошибке
-            </a>
+            </a> 
         </div>
         <?php echo CHtml::tag('span', array('class' => 'icon comments'), '', true); ?>
         <?php echo CHtml::tag('span', array('class' => 'small noline'), '1 450', true); ?>
