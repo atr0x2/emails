@@ -16,6 +16,11 @@
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
         <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/custom-form-elements.js'); ?>
+        
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/uniform.default.css" />
+        <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/jquery.uniform.min.js'); ?>
+        
+        <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/main.js'); ?>
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
     <?php $mainpage = (Yii::app()->controller->getId()== 'site' && Yii::app()->controller->getAction()->getId() == 'index')? true : false; ?>
@@ -88,7 +93,7 @@
                                         ),
                                     ));
                                     ?>
-                                    <?php echo Chtml::link('<span class="icon pencil"></span>Написать письмо или отзыв', '#', array('id' => 'top-send-letter-link', 'class' => 'large upper')); ?>
+                                    <?php echo CHtml::link('<span class="icon pencil"></span>Написать письмо или отзыв', 'index.php?r=site/newletter', array('id' => 'top-send-letter-link', 'class' => 'large upper')); ?>
                                     <hr>
                                         <?php
                                         $this->widget('zii.widgets.CMenu', array(

@@ -847,3 +847,104 @@ REQUEST_URI=/
 in W:\domains\email.local\protected\views\site\index.php (6)
 in W:\domains\email.local\protected\controllers\SiteController.php (32)
 in W:\domains\email.local\index.php (13)
+2013/01/14 12:20:05 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "newletter".' in W:\domains\emails\framework\web\CController.php:879
+Stack trace:
+#0 W:\domains\emails\framework\web\CController.php(783): CController->renderPartial('newletter', NULL, true)
+#1 W:\domains\emails\protected\controllers\SiteController.php(81): CController->render('newletter')
+#2 W:\domains\emails\framework\web\actions\CInlineAction.php(50): SiteController->actionNewletter()
+#3 W:\domains\emails\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 W:\domains\emails\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 W:\domains\emails\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 W:\domains\emails\framework\web\CWebApplication.php(283): CController->run('newletter')
+#7 W:\domains\emails\framework\web\CWebApplication.php(142): CWebApplication->runController('site/newletter')
+#8 W:\domains\emails\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 W:\domains\emails\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=site/newletter
+HTTP_REFERER=http://emails/index.php?r=site/index
+---
+2013/01/14 14:04:41 [error] [php] include(ImperaviRedactorWidget.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (W:\domains\emails\framework\YiiBase.php:423)
+Stack trace:
+#0 W:\domains\emails\framework\web\CWidgetFactory.php(147): import()
+#1 W:\domains\emails\framework\web\CBaseController.php(147): CWidgetFactory->createWidget()
+#2 W:\domains\emails\framework\web\CBaseController.php(173): SiteController->createWidget()
+#3 W:\domains\emails\protected\views\site\newletter.php(110): SiteController->widget()
+#4 W:\domains\emails\framework\web\CBaseController.php(127): require()
+#5 W:\domains\emails\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 W:\domains\emails\framework\web\CController.php(870): SiteController->renderFile()
+#7 W:\domains\emails\framework\web\CController.php(783): SiteController->renderPartial()
+#8 W:\domains\emails\protected\controllers\SiteController.php(81): SiteController->render()
+#9 W:\domains\emails\framework\web\actions\CInlineAction.php(50): SiteController->actionNewletter()
+#10 W:\domains\emails\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 W:\domains\emails\framework\web\CController.php(287): SiteController->runAction()
+#12 W:\domains\emails\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 W:\domains\emails\framework\web\CWebApplication.php(283): SiteController->run()
+#14 W:\domains\emails\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 W:\domains\emails\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 W:\domains\emails\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/newletter
+in W:\domains\emails\protected\views\site\newletter.php (110)
+in W:\domains\emails\protected\controllers\SiteController.php (81)
+in W:\domains\emails\index.php (13)
+2013/01/14 14:04:52 [error] [exception.CException] exception 'CException' with message 'Alias "ext.ImperaviRedactorWidget" is invalid. Make sure it points to an existing PHP file and the file is readable.' in W:\domains\emails\framework\YiiBase.php:318
+Stack trace:
+#0 W:\domains\emails\framework\web\CWidgetFactory.php(147): YiiBase::import('ext.ImperaviRed...', true)
+#1 W:\domains\emails\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'ext.ImperaviRed...', Array)
+#2 W:\domains\emails\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.ImperaviRed...', Array)
+#3 W:\domains\emails\protected\views\site\newletter.php(110): CBaseController->widget('ext.ImperaviRed...', Array)
+#4 W:\domains\emails\framework\web\CBaseController.php(127): require('W:\domains\emai...')
+#5 W:\domains\emails\framework\web\CBaseController.php(96): CBaseController->renderInternal('W:\domains\emai...', NULL, true)
+#6 W:\domains\emails\framework\web\CController.php(870): CBaseController->renderFile('W:\domains\emai...', NULL, true)
+#7 W:\domains\emails\framework\web\CController.php(783): CController->renderPartial('newletter', NULL, true)
+#8 W:\domains\emails\protected\controllers\SiteController.php(81): CController->render('newletter')
+#9 W:\domains\emails\framework\web\actions\CInlineAction.php(50): SiteController->actionNewletter()
+#10 W:\domains\emails\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 W:\domains\emails\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 W:\domains\emails\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 W:\domains\emails\framework\web\CWebApplication.php(283): CController->run('newletter')
+#14 W:\domains\emails\framework\web\CWebApplication.php(142): CWebApplication->runController('site/newletter')
+#15 W:\domains\emails\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 W:\domains\emails\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=site/newletter
+HTTP_REFERER=http://emails/index.php?r=site/search
+---
+2013/01/14 14:05:18 [error] [exception.CException] exception 'CException' with message 'ImperaviRedactorWidget must specify "model" and "attribute" or "name" property values.' in W:\domains\emails\framework\web\widgets\CInputWidget.php:61
+Stack trace:
+#0 W:\domains\emails\protected\extensions\imperavi-redactor-widget\ImperaviRedactorWidget.php(74): CInputWidget->resolveNameID()
+#1 W:\domains\emails\framework\web\CBaseController.php(148): ImperaviRedactorWidget->init()
+#2 W:\domains\emails\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.imperavi-re...', Array)
+#3 W:\domains\emails\protected\views\site\newletter.php(110): CBaseController->widget('ext.imperavi-re...', Array)
+#4 W:\domains\emails\framework\web\CBaseController.php(127): require('W:\domains\emai...')
+#5 W:\domains\emails\framework\web\CBaseController.php(96): CBaseController->renderInternal('W:\domains\emai...', NULL, true)
+#6 W:\domains\emails\framework\web\CController.php(870): CBaseController->renderFile('W:\domains\emai...', NULL, true)
+#7 W:\domains\emails\framework\web\CController.php(783): CController->renderPartial('newletter', NULL, true)
+#8 W:\domains\emails\protected\controllers\SiteController.php(81): CController->render('newletter')
+#9 W:\domains\emails\framework\web\actions\CInlineAction.php(50): SiteController->actionNewletter()
+#10 W:\domains\emails\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 W:\domains\emails\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 W:\domains\emails\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 W:\domains\emails\framework\web\CWebApplication.php(283): CController->run('newletter')
+#14 W:\domains\emails\framework\web\CWebApplication.php(142): CWebApplication->runController('site/newletter')
+#15 W:\domains\emails\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 W:\domains\emails\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=site/newletter
+HTTP_REFERER=http://emails/index.php?r=site/search
+---
+2013/01/14 19:02:01 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "newletter2".' in W:\domains\emails\framework\web\CController.php:879
+Stack trace:
+#0 W:\domains\emails\framework\web\CController.php(783): CController->renderPartial('newletter2', NULL, true)
+#1 W:\domains\emails\protected\controllers\SiteController.php(71): CController->render('newletter2')
+#2 W:\domains\emails\framework\web\actions\CInlineAction.php(50): SiteController->actionNewletter()
+#3 W:\domains\emails\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 W:\domains\emails\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 W:\domains\emails\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 W:\domains\emails\framework\web\CWebApplication.php(283): CController->run('newletter')
+#7 W:\domains\emails\framework\web\CWebApplication.php(142): CWebApplication->runController('site/newletter')
+#8 W:\domains\emails\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 W:\domains\emails\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=site/newletter
+HTTP_REFERER=http://emails/index.php?r=site/newletter
+---
