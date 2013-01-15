@@ -173,6 +173,10 @@ span.icon
     width: 20px;
     vertical-align: middle;
 }
+.icon.close
+{
+    background: url('../images/icons.png') no-repeat -103px 0 transparent;
+}
 .icon.pencil
 {
     background: url('../images/icons.png') no-repeat 0 0 transparent;
@@ -253,11 +257,11 @@ hr.light
 }
 .dark-grey
 {
-    color: #666;
+    color: #666 !important;
 }
 .grey
 {
-    color:#999999;
+    color:#999999 !important;
 }
 .bg-grey
 {
@@ -265,11 +269,11 @@ hr.light
 }
 .red
 {
-    color:#cc0000;
+    color:#cc0000 !important;
 }
 .blue
 {
-    color:#006699;
+    color:#006699 !important;
 }
 .small
 {
@@ -408,6 +412,7 @@ hr.light
 {
     height: 40px;
     width: 100%;
+    position:relative;
 }
 #search-block
 {
@@ -818,6 +823,14 @@ a.twitter-icon:hover
     line-height: 30px;
     text-transform: uppercase;
 }
+h3.title
+{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
 .content-cell
 {
     width:180px;
@@ -1308,4 +1321,139 @@ div.pagination-box a:hover
 div.pagination-box a.active
 {
     background: #cc0000;
+}
+
+.shadow
+{
+    -webkit-box-shadow: 0px 0px 5px #ccc;
+    -moz-box-shadow: 0px 0px 5px #ccc;
+    box-shadow: 0px 0px 5px #ccc;
+}
+.dark-shadow
+{
+    -webkit-box-shadow: 0px 0px 10px #999;
+    -moz-box-shadow: 0px 0px 10px #999;
+    box-shadow: 0px 0px 10px #999;
+}
+
+.emodal
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 2;
+}
+
+#login-window
+{
+    height: 295px;
+    padding: 40px;
+    width: 615px;
+}
+
+#login-window .largemenu
+{
+    display: block;
+    font-weight: bold;
+    margin-right: 17px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 3px 0px;
+    float:left;
+}
+#login-window .largemenu.active
+{
+    background: none repeat scroll 0 0 #CC0000;
+    color: #FFFFFF;
+    padding: 3px 10px;
+}
+#login-form-block
+{
+    float: left;
+    width: 275px;
+}
+#openid-form-block
+{
+    float:right;
+    width: 270px;
+}
+#login-window-form .row
+{
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+#login-window-form .label
+{
+    display: block;
+    float: left;
+    width: 90px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    min-height: 1px;
+}
+#login-window-form .field
+{
+    float: left;
+    width: 170px;
+}
+#openid-form-block .row
+{
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+#openid-form-block .label
+{
+    display: block;
+    float: left;
+    width: 120px;
+    min-height: 1px;
+}
+#openid-form-block a.openidlink span
+{
+    display: inline-block;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 16px;
+}
+#openid-form-block a.vk span
+{
+    background: url("../images/socialnet-icons.png") no-repeat scroll -52px 0 transparent;
+}
+#openid-form-block a.yandex span
+{
+    background: url("../images/socialnet-icons.png") no-repeat scroll -104px 0 transparent;
+}
+#openid-form-block a.facebook span
+{
+    background: url("../images/socialnet-icons.png") no-repeat scroll 0 0 transparent;
+}
+#openid-form-block a.twitter span
+{
+    background: url("../images/socialnet-icons.png") no-repeat scroll -26px 0 transparent;
+}
+#openid-form-block a.google span
+{
+    background: url("../images/socialnet-icons.png") no-repeat scroll -78px 0 transparent;
+}
+#select-region-box .label
+{
+    color:#000;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    min-height: 1px;
+    text-transform: uppercase;
+}
+#select-region-box .column
+{
+    width: 224px;
+    margin: 0px;
+    
 }
